@@ -29,12 +29,27 @@
                                     <action selector="shakeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fxT-w3-t1f"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have a question?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDx-ub-BCH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you need a startup idea?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDx-ub-BCH">
                                 <rect key="frame" x="15" y="164" width="384" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="uJk-6j-WEL"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="for" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46A-cE-YXo">
+                                <rect key="frame" x="15" y="254" width="384" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="People" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2a-31-9he">
+                                <rect key="frame" x="15" y="307.5" width="384" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="w4Z-iY-4HI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -42,16 +57,24 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="mDx-ub-BCH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="0FC-6w-3e9"/>
+                            <constraint firstItem="D2a-31-9he" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="13V-J0-bbN"/>
                             <constraint firstItem="mDx-ub-BCH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="7Cm-Jv-J1B"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="f2v-Bb-FFj" secondAttribute="bottom" constant="20" id="AfW-2I-dCY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mDx-ub-BCH" secondAttribute="trailing" constant="15" id="Osu-eA-1kW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D2a-31-9he" secondAttribute="trailing" constant="15" id="Oyj-Kn-njk"/>
                             <constraint firstItem="f2v-Bb-FFj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="Rdx-vd-Wtd"/>
+                            <constraint firstItem="46A-cE-YXo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="YtW-F4-ffh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f2v-Bb-FFj" secondAttribute="trailing" constant="15" id="axm-A6-ccl"/>
+                            <constraint firstItem="D2a-31-9he" firstAttribute="top" secondItem="46A-cE-YXo" secondAttribute="bottom" constant="20" id="dEh-nN-j8X"/>
+                            <constraint firstItem="46A-cE-YXo" firstAttribute="top" secondItem="mDx-ub-BCH" secondAttribute="bottom" constant="20" id="ggX-Iy-ci4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="46A-cE-YXo" secondAttribute="trailing" constant="15" id="yzl-gi-B8e"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="mDx-ub-BCH" id="CoZ-Nz-8JC"/>
+                        <outlet property="customerLabel" destination="D2a-31-9he" id="uKd-3c-32o"/>
+                        <outlet property="forLabel" destination="46A-cE-YXo" id="Hbr-dh-1sN"/>
                         <outlet property="shakeButton" destination="f2v-Bb-FFj" id="F64-Wa-uPG"/>
                     </connections>
                 </viewController>
